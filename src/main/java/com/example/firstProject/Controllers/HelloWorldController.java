@@ -1,11 +1,11 @@
-package com.example.firstProject;
+package com.example.firstProject.Controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-    @RequestMapping
+    @RequestMapping("/hello")
     public String helloWorld(){
         return "Hello World from Spring Boot";
     }
